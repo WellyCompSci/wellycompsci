@@ -1,0 +1,16 @@
+{
+    "name": "Max Al-Hasso",
+    "titles": "Computer Science Ambassador",
+    "house": "Hill",
+    "startingYear": 2013,
+    "endingYear": 2018,
+    "subjectsTaken": "Computer Science, Chemistry, Mathematics, Further Mathematics",
+    "languages": "Python, HTML, CSS, JS (and jQuery), SQL and PHP",
+    "subjectInterest": "AI, Web Development and Game Development",
+    "about": "I first started studying Computer Science at A Level. I have been co-running the Computer Science Society since February 2017 and I am one of the original Computer Science Ambassadors here at Wellington College. I am looking to read either Computer Science or Computer Science with Mathematics at university and I am applying to both the UK and the US systems.",
+    "profilePic": "./images/MaxAlHassoProfile.jpg",
+    "email": "alhasm@wellingtoncollege.org.uk",
+    "pics": [
+        "./images/MaxAlHasso1.jpg"
+    ]
+}
