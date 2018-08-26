@@ -6,8 +6,8 @@ module.exports = {
   plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-react-next',{
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
+        path: `${__dirname}/src/data`,
+        name: 'data',
       }
     }, {
       resolve: 'gatsby-transformer-remark',

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-
+import Helmet from 'react-helmet';
 export default class Tutorials extends React.Component{
     render(){
         const { edges: tutorials } = this.props.data.allMarkdownRemark;
@@ -17,6 +17,12 @@ export default class Tutorials extends React.Component{
         });
         final.push({group: currentGroup, tutorials: currentArr});
         return (
+            <React.Fragment>
+                <Helmet title = {
+                    "Tutorials - " + this.props.data.site.siteMetadata.title
+                }
+                />
+
             <div className="body">
                 <div className="tutorials">
                     {final.map(({tutorials, group}) => {
@@ -29,11 +35,18 @@ export default class Tutorials extends React.Component{
                     })}
                 </div>
             </div>
+            </React.Fragment>
         );
     }
 }
 export const pageQuery = graphql `
   query IndexQuery {
+      site {
+          siteMetadata {
+              title
+              footer
+          }
+      }
     allMarkdownRemark(sort: {
                 fields: [frontmatter___group,frontmatter___order],
                 order: DESC

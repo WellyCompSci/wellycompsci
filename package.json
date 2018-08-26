@@ -23,7 +23,6 @@
     "gatsby-transformer-sharp": "^1.6.27",
     "react-helmet": "^5.2.0",
     "react-powerplug": "^1.0.0-rc.1",
-    "react-responsive": "^5.0.0",
     "react-spring": "^5.6.8"
   },
   "keywords": [

@@ -1,26 +1,35 @@
 import React from 'react';
-
+import {StaffMember} from '../data';
+import Helmet from 'react-helmet';
 export default class Staff extends React.Component{
     render(){
         return(
+            <React.Fragment>                
+                < Helmet title = {
+                    "Staff - " + this.props.data.site.siteMetadata.title
+                }
+                />
+
             <div className="body">
                 <h1>The Staff</h1>
                 {this.props.data.allStaffJson.edges.map(({node: staffMember}) => (
-                    <div className="staff">
-                        <div>
-                            <h2>{staffMember.name}</h2>
-                            <p dangerouslySetInnerHTML={{__html: staffMember.text}}/>
-                        </div>
-                        <div><img src={require(staffMember.image)} style={{width: '100%', height: 'auto'}} alt={staffMember.name}/></div>
-                    </div>
+                    <StaffMember staffMember={staffMember}/>
                 ))}
             </div>
+            </React.Fragment>
+
         );
     }
 }
 
 export const pageQuery = graphql`
     query StaffQuery{
+        site {
+            siteMetadata {
+                title
+                footer
+            }
+        }
         allStaffJson{
             edges{
                 node{

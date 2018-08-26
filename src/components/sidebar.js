@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import MediaQuery from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class Sidebar extends React.Component{
@@ -20,9 +19,8 @@ export default class Sidebar extends React.Component{
 
         ]
         return(
-            <React.Fragment>
-            <MediaQuery maxWidth={768}>
                 <div className="sidebar">
+                <div className="sidebar-small">
                     <div className="sidebar-top">
                         <a style={{margin: 5}} href="https://twitter.com/Welly_CompSci"><FontAwesomeIcon icon={["fab","twitter"]} size="2x"/></a>
                          <div className={toggle ? "menu-logo change" : "menu-logo"} onClick={this.toggle}>
@@ -36,15 +34,12 @@ export default class Sidebar extends React.Component{
                             {items.map(item => <Link to={item.to}>{item.text}</Link>)}
                         </div>
                 </div>
-            </MediaQuery> 
-            <MediaQuery minWidth={769}>     
-                <div className="sidebar">
+                <div className="sidebar-large">
                         <div>
                             {items.map(item => <Link to={item.to}>{item.text}</Link>)}
                         </div>
-                </div>
-                </MediaQuery>
-                </React.Fragment>
+                        </div>
+             </div>
         );
     }
 }

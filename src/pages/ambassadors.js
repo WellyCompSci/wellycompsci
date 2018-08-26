@@ -1,50 +1,36 @@
 import React from "react";
-import { Toggle } from "react-powerplug"
+import Ambassador from "../data/ambassador";
+import Helmet from "react-helmet";
 
 export default class Amabassadors extends React.Component{
     render(){
         return (
+            <React.Fragment>
+                < Helmet title = {
+                    "Ambassadors - " + this.props.data.site.siteMetadata.title
+                }
+                />
+
             <div className="body">
                 <h2>Ambassadors</h2>
                 <div style={{display: 'flex'}}>
                 {this.props.data.allAmbassadorsJson.edges.map(({node: ambassador}, key) => (
-                    <Toggle>
-                        {({on, toggle}) => (
-                    <React.Fragment>
-                    <div className="ambassador" key={key}>
-                        <img src={require(ambassador.profilePic)} onClick={toggle} style={{width: '100%'}} />
-                        <div>
-                            <h2>{ambassador.name}</h2>
-                            <p class="titles">{ambassador.titles}</p>
-                            <p>{ambassador.house}</p>
-                            <p>{ambassador.startingYear} - {ambassador.endingYear}</p>
-                            {ambassador.endingYear > new Date().getYear() && <a href={"mailto:" + ambassador.email}>Contact</a>}
-                        </div>    
-                    </div>
-                    <div className="ambassador-modal" style={{display: on ? 'block' : 'none'}}>
-                        <span className="close" onClick={toggle}>&times;</span>
-                        <img class="modal-content" src={require(ambassador.profilePic)}/>
-                        <div class="caption">
-                            <h2>Name:{ambassador.name}</h2>
-                            <h3>Alais: {ambassador.titles}</h3>
-                            <p>House: {ambassador.house}</p>
-                            <p>Time at Wellington: {ambassador.startingYear} - {ambassador.endingYear}</p>
-                            <p>Subjects Taken: {ambassador.subjectsTaken}</p>
-                            <p>Languages Proficient: {ambassador.languages}</p>
-                            <p>About Me: {ambassador.about}</p>
-                        </div>
-                    </div>
-                    </React.Fragment>
-                        )}
-                        </Toggle>
+                    <Ambassador ambassador={ambassador} key={key}/>
                 ))}
                 </div>
             </div>
+            </React.Fragment>
         );
     }
 }
 export const pageQuery = graphql `
     query AmbassadorsQuery{
+        site {
+            siteMetadata {
+                title
+                footer
+            }
+        }
         allAmbassadorsJson{
             edges{
                 node{

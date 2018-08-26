@@ -14,8 +14,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Welly Comp Sci is a student designed website for advertisement of the Computer Science department at Wellington College' },
+        { name: 'keywords', content: 'wellington, college, computer, science, wellly, comp, sci, student, led, project, design, jonathon, hooper, paul, jennings, website' },
       ]}
     />
     <div className="wrapper">

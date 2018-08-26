@@ -744,6 +744,13 @@ pre tt:after {
 .sidebar a:nth-child(3n + 2):hover {
   background-color: #a6d6c9;
 }
+  .sidebar-small {
+    display: none;
+  }
+
+  .sidebar-large {
+    display: display;
+  }
 .sidebar-top a{
   border: none;
   padding: 0;
@@ -787,6 +794,12 @@ pre tt:after {
   }
   .sidebar{
     height: auto;
+  }
+  .sidebar-small{
+    display: block;
+  }
+  .sidebar-large{
+    display: none;
   }
 }
 .ambassador {
