@@ -2,7 +2,7 @@
   "name": "wellycompsci",
   "description": "WellyCompSci Website",
   "version": "1.0.0",
-  "author": "Will Mann",
+  "author": "WellyCompSci",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "prerelease",
     "@fortawesome/free-brands-svg-icons": "prerelease",
@@ -41,6 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/WellyCompSci/wellycompsci"
   }
 }
