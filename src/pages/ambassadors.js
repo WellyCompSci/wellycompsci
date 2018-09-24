@@ -6,14 +6,11 @@ export default class Amabassadors extends React.Component{
     render(){
         return (
             <React.Fragment>
-                < Helmet title = {
-                    "Ambassadors - " + this.props.data.site.siteMetadata.title
-                }
-                />
+                <Helmet title={"Ambassadors - " + this.props.data.site.siteMetadata.title}/>
 
             <div className="body">
                 <h2>Ambassadors</h2>
-                <div style={{display: 'flex'}}>
+                <div style={{display: 'flex', flexWrap: 'wrap'}}>
                 {this.props.data.allAmbassadorsJson.edges.map(({node: ambassador}, key) => (
                     <Ambassador ambassador={ambassador} key={key}/>
                 ))}
@@ -31,9 +28,9 @@ export const pageQuery = graphql `
                 footer
             }
         }
-        allAmbassadorsJson{
-            edges{
-                node{
+          allAmbassadorsJson(sort: {fields: priority, order: ASC}){
+            edges {
+                node {
                     name
                     titles
                     house
@@ -44,7 +41,6 @@ export const pageQuery = graphql `
                     subjectInterest
                     about
                     profilePic
-                    pics
                 }
             }
         }

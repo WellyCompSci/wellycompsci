@@ -731,7 +731,7 @@ pre tt:after {
   border-bottom-color: #f7d117;
 }
 .sidebar a:nth-child(3n + 2){
-  border-bottom-color: #a6d6c9; 
+  border-bottom-color: #a6d6c9;
 }
 .sidebar a:nth-child(3n + 1):hover {
   background-color: #f49712;
@@ -802,10 +802,25 @@ pre tt:after {
     display: none;
   }
 }
+.job {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 5vmin;
+  text-align: center;
+  padding: 1vmin;
+  max-width: 400px;
+}
+.project{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5vmin;
+    text-align: center;
+    padding: 1vmin;
+    max-width: 350px;
+}
 .ambassador {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: auto;
+  margin: 5vmin;
+  padding: 1vmin;
   text-align: center;
 }
 .ambassador img{

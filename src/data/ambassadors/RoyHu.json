@@ -4,7 +4,7 @@
     "house": "Murray",
     "startingYear": 2013,
     "endingYear": 2018,
-    "subjectsTaken": "Computer Science, Maths, Further Maths, Physics",
+    "subjectsTaken": "A-Level Computer Science, Maths, Further Maths, Physics",
     "languages": "Python, HTML, CSS, JS, SQL",
     "subjectInterest": "Artificial Intelligence, Automation",
     "about": "I am an original ambassador of Computer Science having studied it at both GCSE and A level and looking to read Computer Science at University. I strive to dedicate my efforts to encourage the growth of interest into Computer Science within the student body. Never before has computer oriented technologies played such a pivotal part in our lives, therefore possessing the skill to harness the potential of the computer becomes essential in giving yourself the competitive edge, regardless of your specialisation.",
@@ -12,5 +12,6 @@
     "email": "hur@wellingtoncollege.org.uk",
     "pics": [
         "./images/RoyHu1.jpg"
-    ]
+    ],
+    "priority": 2
 }

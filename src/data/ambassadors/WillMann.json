@@ -1,0 +1,15 @@
+{
+    "name": "Will Mann",
+    "titles": "President, Computer Science Ambassador",
+    "house": "Benson",
+    "startingYear": 2014,
+    "endingYear": 2019,
+    "subjectsTaken": "A-Level Computer Science, Physics, Mathematics, Further Mathematics",
+    "languages": "HTML, CSS, JavaScript/TypeScript (jQuery, NodeJS, ReactJS), Sass, PHP, C#, Java, Python, Lua, Swift",
+    "subjectInterest": "Web Development, App Development, Software Development, Entrepreneurship, AI, Game Development",
+    "about": "I always was interested in Computer Science for my entire life, even before I went to Wellington. But Wellington has provided me a spring board from which to take my ideas and build them into a reality. Therefore, as President of WellyCompSci, I hope to provide a solid support structure for other students who were in a similar boat to me.",
+    "profilePic": "./images/WillMannProfile.jpg",
+    "email": "mannw@wellingtoncollege.org.uk",
+    "pics": [],
+    "priority": 0
+}

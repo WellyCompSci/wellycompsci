@@ -16,6 +16,8 @@ export default class Sidebar extends React.Component{
                     {to: '/staff', text: "Staff"},
                     {to: '/ambassadors', text: "Ambassadors"},
                     {to: '/tutorials', text: "Tutorials"},
+                    {to: '/jobs', text: "Jobs"},
+                    {to: '/projects', text: "Projects"}
 
         ]
         return(
