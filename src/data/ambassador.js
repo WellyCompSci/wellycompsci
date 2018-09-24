@@ -14,7 +14,7 @@ export default class Ambassador extends React.Component{
                             <p className="titles">{ambassador.titles}</p>
                             <p>{ambassador.house}</p>
                             <p>{ambassador.startingYear} - {ambassador.endingYear}</p>
-                            {(parseInt(ambassador.endingYear) > parseInt(new Date().getYear())) ? <a href={"mailto:" + ambassador.email}>Contact</a>: null}
+                            {(parseInt(ambassador.endingYear) >= new Date().getYear()) ? <a href={`mailto:${ambassador.email}`}>Contact</a>: null}
                         </div>
                     </div>
                     <div className="ambassador-modal" style={{display: on ? 'block' : 'none'}}>

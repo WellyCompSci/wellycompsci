@@ -14,9 +14,7 @@
      const tutorialPageTemplate = path.resolve('src/templates/tutorialTemplate.js');
 
      return graphql(`{
-        allMarkdownRemark(
-            limit: 1000
-        ) {
+        allMarkdownRemark {
             edges{
                 node{
                     frontmatter{

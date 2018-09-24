@@ -12,6 +12,7 @@ export default class Amabassadors extends React.Component{
 
             <div className="body">
                 <h2>Jobs</h2>
+                <p>If you are interested in any of these roles, email us at <a href="mailto:wellycompsci@wellingtoncollege.org.uk">WellyCompSci</a></p>
                 <div style={{display: 'flex', flexWrap: 'wrap', display: '-webkit-flex'}}>
                 {this.props.data.allJobsJson.edges.map(({node: job}, key) => (
                     <div className="job">

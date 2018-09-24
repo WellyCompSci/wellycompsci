@@ -1,0 +1,6 @@
+{
+    "title": "Monday Night Football",
+    "description": "Our team worked with the leadership team of Monday Night Football to create a modern and high tech way to preview all of the respective matches lined up for each house. This website utilises ReactJS and GraphQL using ApolloJS. This website was purely student designed and written, proving that the students of Wellington can make something worthwhile if they put thier collective minds to the task.",
+    "link": "https://wellymnf.netlify.com",
+    "image": "./images/MNF.png"
+}

@@ -20,13 +20,10 @@ order: 3
       <br>One way to do this is with ray casts. However, the easiest method for now is probably to just check whether the point beneath the player is ground or not. To do this, we’ll need to create a new ‘transform’ in our control script. A transform
       is simply a point in space with its own coordinates and rotation. We’ll call this groundCheck and add it the way we add any other variable. We’re also going to give that point a radius, we’re going to define a ‘layer mask’ (I’ll get to that) and
       we’re going to create a boolean called onGround.
-
-
       <br>
       <img style="height: 300px; width: auto; margin: auto; text-align: center" src="./lesson_2_2.png">
       <br>You also need to add the following lines of code below:
       <br> <img style="height: 300px; width: auto; margin: auto; text-align: center" src="./lesson_2_3.png">
-
       <br> FixedUpdate works very similarly to Update except that Update is tied to the refresh rate of the screen, whereas FixedUpdate has a more predictable behavior that makes it better suited to physics-related code. The lines of code we added here
       simply set the boolean onGround to ‘true’ only when the new circle overlaps with the ‘ground’ layer. But of course we haven’t set the coordinates of the groundCheck transform yet, so to rectify that, go back to Unity and create an empty game object
       as a child of your player (right click on the player object in the hierarchy and select ‘Create Empty’). Call this Check Ground.

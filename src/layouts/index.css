@@ -826,6 +826,8 @@ pre tt:after {
 .ambassador img{
   cursor: pointer;
   transition: 0.3s;
+  object-fit: contain;
+  height: 300px;
 }
 .ambassador img:hover{
   opacity: 0.7;

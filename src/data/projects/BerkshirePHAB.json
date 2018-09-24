@@ -1,5 +1,6 @@
 {
     "title": "Berkshire PHAB",
-    "description": "Our connected ciriculum team designed a website for a local branch of the PHAB national charity. We learnt basic HTML, CSS and JavaScript. The design team included: Will Mann, Ben Hoggarth, Orr Bezalely, Vinh Le, Louis Desforges, Amael De Betak, Nate Oppenheimer under the supervision of Mr Hooper and Mr White",
-    "link": "http://berkshirephab.org"
+    "description": "Our connected ciriculum team designed a website for a local branch of the PHAB national charity. We learnt basic HTML, CSS and JavaScript. The design team included: Will Mann, Ben Hoggarth, Orr Bezalely, Vinh Le, Louis Desforges, Amael De Betak, Nate Oppenheimer under the supervision of Mr Hooper and Mr White.",
+    "link": "http://berkshirephab.org",
+    "image": "./images/BerkshirePHAB.png"
 }

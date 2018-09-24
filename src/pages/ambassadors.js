@@ -11,7 +11,7 @@ export default class Amabassadors extends React.Component{
             <div className="body">
                 <h2>Ambassadors</h2>
                 <div style={{display: 'flex', flexWrap: 'wrap'}}>
-                {this.props.data.allAmbassadorsJson.edges.map(({node: ambassador}, key) => (
+                {this.props.data.allAmbassadorsJson.edges.sort(({node: a},{node: b}) => b.priority < a.priority).map(({node: ambassador}, key) => (
                     <Ambassador ambassador={ambassador} key={key}/>
                 ))}
                 </div>
@@ -28,7 +28,7 @@ export const pageQuery = graphql `
                 footer
             }
         }
-          allAmbassadorsJson(sort: {fields: priority, order: ASC}){
+          allAmbassadorsJson{
             edges {
                 node {
                     name
@@ -41,6 +41,8 @@ export const pageQuery = graphql `
                     subjectInterest
                     about
                     profilePic
+                    priority
+                    email
                 }
             }
         }

@@ -1,7 +1,6 @@
 import React from "react";
-import Thumbnail from 'react-thumbnail';
 import Helmet from "react-helmet";
-
+import {Project} from '../data';
 export default class Amabassadors extends React.Component{
     render(){
         return (
@@ -12,14 +11,10 @@ export default class Amabassadors extends React.Component{
                 />
 
             <div className="body">
-                <h2>Jobs</h2>
+                <h2>Projects</h2>
                 <div style={{display: 'flex', flexWrap: 'wrap', display: '-webkit-flex'}}>
                 {this.props.data.allProjectsJson.edges.map(({node: project}, key) => (
-                    <div className="project">
-                        {project.link && <a href={project.link}><Thumbnail width={250} height={250} page={project.link} scale={4} /></a>}
-                      <h3>{project.title}</h3>
-                      <p>{project.description}</p>
-                    </div>
+                    <Project project={project} />
                 ))}
                 </div>
             </div>
@@ -41,6 +36,7 @@ export const pageQuery = graphql `
                     title
                     description
                     link
+                    image
                 }
             }
         }
