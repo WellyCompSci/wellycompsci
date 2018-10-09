@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Sidebar from './sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class Header extends React.Component{
@@ -43,7 +42,7 @@ export default class Header extends React.Component{
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          <span>Welly</span><span>Comp</span><span>Sci</span>
         </Link>
       </h1>
       <div style={{padding: 5, textAlign: 'center'}}><a style={{margin: 5}} href="https://twitter.com/Welly_CompSci"><FontAwesomeIcon icon={["fab","twitter"]} size="lg"/></a>

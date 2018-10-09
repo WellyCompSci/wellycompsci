@@ -21,7 +21,7 @@ export default class Ambassador extends React.Component{
                         <span className="close" onClick={toggle}>&times;</span>
                         <img className="modal-content" src={require(ambassador.profilePic)}/>
                         <div className="caption">
-                            <h2>Name:{ambassador.name}</h2>
+                            <h2>Name: {ambassador.name}</h2>
                             <h3>Alais: {ambassador.titles}</h3>
                             <p>House: {ambassador.house}</p>
                             <p>Time at Wellington: {ambassador.startingYear} - {ambassador.endingYear}</p>

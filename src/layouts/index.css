@@ -639,8 +639,14 @@ pre tt:after {
   text-align: center;
   margin: 0;
 }
-.header a{
-  color: white;
+.header span:nth-child(1){
+  color: #f49712;
+}
+.header span:nth-child(2){
+  color: #a6d6c9;
+}
+.header span:nth-child(3){
+  color: #f7d117;
 }
 .body{
     min-width: 70vw;
@@ -655,6 +661,7 @@ pre tt:after {
 }
 .menu-logo{
   cursor: pointer;
+  display: none
 }
 .menu-logo .strip-1, .menu-logo .strip-2, .menu-logo .strip-3{
   width: 35px;
@@ -801,6 +808,9 @@ pre tt:after {
   .sidebar-large{
     display: none;
   }
+  .menu-logo{
+    display: block;
+  }
 }
 .job {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -870,7 +880,7 @@ pre tt:after {
       margin: auto;
       display: block;
       width: 80%;
-      max-width: 700px;
+      max-width: 600px;
 }
 .ambassador-modal .caption{
       margin: auto;
